@@ -19,21 +19,21 @@ function change_myselect(sel) {
   xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       myObj = JSON.parse(this.responseText);
-      console.log(myObj)
       txt += "<table border='1'>"
-      console.log(sel)
       if (sel == "Biler"){
-      txt += "<tr><td>" + myObj[sel].bil.name + "</td></tr>";
-      txt += "<tr><td>" + myObj[sel].bil1.name + "</td></tr>";
-      txt += "<tr><td>" + myObj[sel].bil2.name + "</td></tr>";
+        for(i = 0; i < myObj[sel].length; i++){
+          txt += "<tr><td>" + myObj[sel][i].name + "</td></tr>";
+        }
       }
       if(sel == "Brugere"){
-      txt += "<tr><td>" + myObj[sel].Bruger1.name + "</td></tr>";
-      txt += "<tr><td>" + myObj[sel].Bruger2.name + "</td></tr>";
+        for(i = 0; i < myObj[sel].length; i++){
+          txt += "<tr><td>" + myObj[sel][i].name + "</td></tr>";
+        }
       }
       if(sel == "Bookinger"){
-      txt += "<tr><td>" + myObj[sel].booking1.bruger + "</td></tr> <tr><td>" + myObj[sel].booking1.bil + "</td></tr>";
-      txt += "<tr><td>" + myObj[sel].booking2.bruger + "</td></tr> <tr><td>" + myObj[sel].booking2.bil + "</td></tr>";
+        for(i = 0; i < myObj[sel].length; i++){
+          txt += "<tr><td>" + myObj[sel][i].bruger + "</td></tr> <tr><td>" + myObj[sel][i].bil + "</td></tr>";
+        }
       }
 
       txt += "</table>"
