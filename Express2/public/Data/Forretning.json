@@ -1,0 +1,44 @@
+{
+    "Biler":{
+       "bil":{
+          "id":"bil",
+          "name":"Mercedes",
+          "color":"Green",
+          "lejet":true
+       },
+       "bil1":{
+          "id":"bil1",
+          "name":"Volvo",
+          "color":"Green",
+          "lejet":true
+       },
+       "bil2":{
+          "id":"bil2",
+          "name":"Suzuki",
+          "color":"Blue",
+          "lejet":false
+       }
+    },
+    
+   "Brugere":{
+      "Bruger1":{
+         "name":"peter",
+         "age":30
+    },
+      "Bruger2":{
+         "name":"susan",
+         "age":20
+      }
+   },
+
+   "Bookinger":{
+      "booking1":{
+         "bruger":"bruger1",
+         "bil":"bil1"
+      },
+      "booking2":{
+         "bruger":"bruger2",
+         "bil":"bil2"
+      }
+   }
+ }
