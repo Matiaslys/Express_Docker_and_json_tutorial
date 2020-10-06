@@ -23,7 +23,7 @@ Herefter bruger vi html eller handlebars til at få informationen fra vores json
 
 3. Så skal du skrive dette i din cmd docker build -t <kan være hvad end du vil have dette er bare et tag> .
 
-4. Til sidst skal skrive dette i din cmd docker run -p 49160:3000 -d <Dit tag> .
+4. Til sidst skal skrive dette i din cmd docker run -p 49160:3000 -d <Her skal der stå dit tag> .
 
 5. Nu kan du så besøge siden ved at gå på localhost:49160
 
