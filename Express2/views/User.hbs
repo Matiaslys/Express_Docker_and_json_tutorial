@@ -10,6 +10,8 @@
 
 <p id="demo"></p>
 
+<p id="Fact"></p>
+<button onclick="joke()">Klik for cat facts</button>
 <script>
 function change_myselect(sel) {
   var obj, dbParam, xmlhttp, myObj, x, txt = "";
@@ -41,8 +43,21 @@ function change_myselect(sel) {
       }
     };
   xmlhttp.open("GET", "Data/Forretning.json", true);
- // xmlhttp.open("GET", "Data/" + sel + ".json", true);
   xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
   xmlhttp.send("x=" + dbParam);
+}
+
+function joke() {
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function () {
+    if ((this.readyState == 4 && this.status == 200) || this.status == 304) {
+      var myObj = JSON.parse(this.responseText);
+      var number = Math.floor(Math.random() * 260);
+      document.getElementById("Fact").innerHTML = myObj.all[number].text;
+    }
+  };
+  xmlhttp.open("GET", "http://cat-fact.herokuapp.com/facts", true);
+  xmlhttp.setRequestHeader("Content-type", "application/json");
+  xmlhttp.send();
 }
 </script>
