@@ -9,11 +9,11 @@ Ved at bruge Express API har jeg fået en mappe med et fuldendt projekt som jeg 
 # JSON fil
 I opgaven skulle vi så lave nogle JSON filer med bil objecter, bruger objekter og bookinger, det har jeg lavet som kan ses på billedet herunder.
 
-![JSON](https://user-images.githubusercontent.com/54976149/94660698-4f4c0000-0306-11eb-94d0-56bd521a253a.PNG)
+![JSON](https://user-images.githubusercontent.com/54976149/94688325-b630df80-032d-11eb-9a75-99f3178068f2.PNG)
 
 Herefter bruger vi html eller handlebars til at få informationen fra vores json filer, dette kan ses nedenunder.
 
-![JSON_TIL_HTML](https://user-images.githubusercontent.com/54976149/94660851-8a4e3380-0306-11eb-9724-2b0a4f2203b6.PNG)
+![JSON_TIL_HTML](https://user-images.githubusercontent.com/54976149/94688335-ba5cfd00-032d-11eb-8f6a-560579b42ed9.PNG)
 
 # Docker tutorial
 
@@ -26,3 +26,4 @@ Herefter bruger vi html eller handlebars til at få informationen fra vores json
 4. Til sidst skal skrive dette i din cmd docker run -p 49160:3000 -d <Dit tag>
 
 5. Nu kan du så besøge siden ved at gå på localhost:49160
+
