@@ -16,14 +16,15 @@ Herefter bruger vi html eller handlebars til at få informationen fra vores json
 ![JSON_TIL_HTML](https://user-images.githubusercontent.com/54976149/94688335-ba5cfd00-032d-11eb-8f6a-560579b42ed9.PNG)
 
 # Docker tutorial
+Brugte selv denne tutorial https://nodejs.org/en/docs/guides/nodejs-docker-webapp/.
 
-1. Først skal du clone denne Repo https://github.com/Matiaslys/Express_and_json_tutorial.git
+1. Først skal du clone denne Repo https://github.com/Matiaslys/Express_and_json_tutorial.git.
 
 2. Derefter skal du køre npm install til lige og få alle modulerne.
 
-3. Så skal du skrive dette i din cmd docker build -t <kan være hvad end du vil have dette er bare et tag> .
+3. Så skal du skrive dette i din cmd docker build -t <kan være hvad end du vil have dette er bare et tag>.
 
-4. Til sidst skal skrive dette i din cmd docker run -p 49160:3000 -d <Dit tag> .
+4. Til sidst skal skrive dette i din cmd docker run -p 49160:3000 -d <Her skal der stå dit tag>.
 
-5. Nu kan du så besøge siden ved at gå på localhost:49160
+5. Nu kan du så besøge siden ved at gå på localhost:49160.
 
